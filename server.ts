@@ -96,7 +96,7 @@ app.listen(port, () => {
       ).slice(0, 12)}`,
     });
 
-    console.log("Local Tunnel URL", tunnel.url);
+    console.log("Local Tunnel URL", tunnel.url + "/api/webhook");
 
     tunnel.on("close", () => {
       console.log("Local tunnel closed");
