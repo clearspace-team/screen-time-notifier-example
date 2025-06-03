@@ -1,6 +1,6 @@
-# STN API Webhooks Sample Project
+# Screen Time Network API Webhooks Sample Project
 
-This is a sample project demonstrating how to integrate with the STN API Webhooks. It includes a basic Node.js server with TypeScript that handles webhook events.
+This is a sample project demonstrating how to integrate with The Screen Time Network using Webhooks. It includes a basic Node.js server with TypeScript that handles webhook events.
 
 ## Prerequisites
 
@@ -13,8 +13,8 @@ This is a sample project demonstrating how to integrate with the STN API Webhook
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/clearspace-team/stn-webhooks-sample-project
-   cd stn-webhooks-sample-project
+   git clone https://github.com/clearspace-team/screen-time-notifier-example
+   cd screen-time-notifier-example
    ```
 
 2. Install dependencies:
@@ -24,8 +24,6 @@ This is a sample project demonstrating how to integrate with the STN API Webhook
    ```
 
 3. Configure your API credentials:
-
-   - Sign in to [The Screen Time Network](https://www.thescreentimenetwork.com/) and create a handle
    - Copy your API key and Webhook Secret from the [API docs](https://www.thescreentimenetwork.com/api)
    - Fill in the constants at the top of server.ts
 
