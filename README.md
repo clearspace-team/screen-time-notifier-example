@@ -1,4 +1,4 @@
-# Screen Time Network API Webhooks Sample Project
+# Screen Time Network Webhook Sample Project
 
 This is a sample project demonstrating how to integrate with The Screen Time Network using Webhooks. It includes a basic Node.js server with TypeScript that handles webhook events.
 
