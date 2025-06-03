@@ -10,7 +10,9 @@ const WEBHOOK_SECRET = "your_webhook_secret";
 const YOUR_HANDLE: string = "your_stn_handle";
 
 if (
+  // @ts-ignore
   WEBHOOK_SECRET === "your_webhook_secret" ||
+  // @ts-ignore
   YOUR_HANDLE === "your_stn_handle"
 ) {
   console.error(
@@ -42,7 +44,7 @@ const validateWebhookBody = (
 
 // ---- Express server ---- //
 const app = express();
-const port: number = 8000;
+const port: number = 8080;
 
 // ---- Webhook ---- //
 app.post(
@@ -88,7 +90,10 @@ app.listen(port, () => {
   try {
     const tunnel = await localtunnel({
       port: port,
-      subdomain: `stn-sample-project-${YOUR_HANDLE.replace(/_/g, "-")}`,
+      subdomain: `screen-time-notifier-example-${YOUR_HANDLE.replace(
+        /_/g,
+        "-"
+      ).slice(0, 12)}`,
     });
 
     console.log("Local Tunnel URL", tunnel.url);

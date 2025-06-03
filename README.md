@@ -24,11 +24,11 @@ This is a sample project demonstrating how to integrate with The Screen Time Net
    ```
 
 3. Configure your API credentials:
-   - Copy your API key and Webhook Secret from the [API docs](https://www.thescreentimenetwork.com/api)
+
+   - Copy your Webhook Secret from the [API docs](https://www.thescreentimenetwork.com/api/getting-started)
    - Fill in the constants at the top of server.ts
 
    ```
-   API_KEY=your_api_key_here
    WEBHOOK_SECRET=your_webhook_secret_here
    YOUR_HANDLE=your_stn_handle
    ```
