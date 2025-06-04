@@ -63,7 +63,7 @@ app.post(
       return res.status(400).send("Invalid webhook body");
     }
 
-    const { handle, trigger, data } = body;
+    const { handle, trigger, isSandbox, data } = body;
 
     player.play("ding.mp3", function (err: any) {
       if (err) {
@@ -73,7 +73,7 @@ app.post(
 
     console.log(
       "\nWebhook Payload:",
-      JSON.stringify({ handle, trigger, data }, null, 2)
+      JSON.stringify({ handle, trigger, isSandbox, data }, null, 2)
     );
     console.log("\n");
 
